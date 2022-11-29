@@ -1,0 +1,12 @@
+Official: nimal,nimal@gmail.com,ceo
+Office_friend: kamal,kamal@gmail.com,clerk,2000/12/12
+Personal: sunil,sunny,sunil@gmail.com,2000/10/10
+Personal: Thiva,Thivs,kalyanasundaramthivaharan@gmail.com,2000/07/18
+Office_friend: Alex,thivaharank.200655n@gmail.com,clerk,2000/08/04
+Personal: ViratKohli,sunny,sunil@gmil.com,2020/10/11
+Personal: Dhoni,MSD,thala7@gmil.com,2020/07/07
+Personal: Sammu,samantha,kalyanasundaramthivaharan@gmail.com,2000/08/02
+Personal: ViratKohli,sunny,sunil@gmil.com,2020/08/04
+Official: Vikram,vikram@gmail.com,Pilot
+Office_friend: Rajni,kalyanasundaramthivaharan@gmail.com,Manager,2000/09/18
+Personal: Raina,MRainaD,thala7@gmail.com,2020/07/11

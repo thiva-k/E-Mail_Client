@@ -1,0 +1,85 @@
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.Properties;
+import java.util.Scanner;
+
+public class Email {
+    
+    final String username = "thivaharank.200655n@gmail.com";
+    final String password = "rnahiykhdtrsosny";
+    private Properties prop = new Properties();
+    Scanner k = new Scanner(System.in);
+    private String recipientaddress;
+    private String messagetext;
+    private String subjecttext;
+    
+    public Email(){
+
+    }
+    
+    public void composeNewMail(String recipientaddress,String subjecttext ,String messagetext){
+        this.recipientaddress= recipientaddress;
+        this.messagetext=messagetext;
+        this.subjecttext=subjecttext;
+        process();
+
+    }
+    public void composeNewMail(){
+        getrecipientMail();
+        getSubject();
+        getText();
+        process();
+    }
+    public void process() {
+
+        
+		prop.put("mail.smtp.host", "smtp.gmail.com");
+        prop.put("mail.smtp.port", "587");
+        prop.put("mail.smtp.auth", "true");
+        prop.put("mail.smtp.starttls.enable", "true"); //TLS
+        prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+        prop.put("mail.smtp.ssl.protocols", "TLSv1.2");
+        Session session = Session.getInstance(prop,
+                new javax.mail.Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password);
+                    }
+                });
+
+        try {
+
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(username));
+            message.setRecipients(
+                    Message.RecipientType.TO,
+                    InternetAddress.parse(recipientaddress)
+            );
+            message.setSubject(subjecttext);
+            message.setText(messagetext);
+
+            Transport.send(message);
+
+            System.out.println("Mail Delievered !!!");
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getrecipientMail(){
+       System.out.println("Enter recipient mail");
+       recipientaddress = k.nextLine();
+
+    }
+    public void getSubject(){
+        System.out.println("Enter Subject");
+        subjecttext = k.nextLine();
+ 
+     }
+     public void getText(){
+        System.out.println("Enter Text Body");
+        messagetext= k.nextLine();
+ 
+     }
+}

@@ -1,0 +1,17 @@
+{
+    "java.project.sourcePaths": [
+        ""
+    ],
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "mailactivation/mail.jar",
+            "Mail Library/activation.jar",
+            "Mail Library/mail.jar",
+            "c:\\Users\\kalya\\Downloads\\javax.mail (2).jar"
+        ],
+        "exclude": [
+            "mailactivation/activation.jar"
+        ]
+    }
+}
