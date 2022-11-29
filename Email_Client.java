@@ -46,7 +46,7 @@ public class Email_Client {
 
                                 RecipientBook.getBDayNames();
                                 // Print recipients who have birthdays on the given input date
-                                // Input format - yyyy/MM/dd (ex: 2018/09/17)
+                                // Input format is - yyyy/MM/dd (ex: 2018/09/17)
                                 
                                 break;
 
