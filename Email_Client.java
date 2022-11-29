@@ -44,7 +44,7 @@ public class Email_Client {
                                 RecipientBook.getTodayBDDayNames();
                                 // Print recipients who have Birthday today
 
-                                RecipientBook.getBDayNames();
+                               
                                 // Print recipients who have birthdays on the given input date
                                 // Input format is - yyyy/MM/dd (ex: 2018/09/17)
                                 
