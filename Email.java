@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 class Email {
     
-    private final String username ;        //  "thivaharank.200655n@gmail.com"    
-    private final String password ;        // "ogohaixmboujeuoj"         
+    private final String username ;           
+    private final String password ;               
     // Cannot use all E-mails by default for SMTP since gmail requires two factor authentication        
     private Properties prop = new Properties();
     private String Recipientaddress;
