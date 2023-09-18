@@ -8,7 +8,7 @@ public class Email_Client {
 
     public static void main(String[] args) {
             
-            Email gmail =new Email("thivaharank.200655n@gmail.com","ogohaixmboujeuoj");
+            Email gmail =new Email(// Add your Email and Password as two seperate arguements);
             Scanner scanner = null;
            
             try  {
