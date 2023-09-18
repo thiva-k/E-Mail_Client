@@ -1,0 +1,11 @@
+
+# Ignore Java class files
+*.class
+
+# Ignore build-related directories
+/target/
+/bin/
+/out/
+
+# Ignore environment files
+*.env
